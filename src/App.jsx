@@ -162,7 +162,7 @@ export default function App() {
         templateId, // ✅ templates
       };
 
-      const res = await fetch("/.netlify/functions/generateBio", {
+      const res = await fetch("/api/generateBio", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),

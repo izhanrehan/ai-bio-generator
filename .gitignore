@@ -1,4 +1,26 @@
-node_modules
-dist
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.vite/
+
+# Env files (NEVER commit)
 .env
 .env.*
+!.env.example
+
+# Netlify local dev artifacts (don’t commit)
+.netlify/
+.netlify/functions-serve/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
